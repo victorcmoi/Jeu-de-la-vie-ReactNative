@@ -13,8 +13,9 @@ export const Grid: React.FC<GridProps> = ({ grid, onCellPress, editable = true }
     const cellSize = useMemo(() => {
         const screenWidth = Dimensions.get('window').width;
         const padding = 40;
-        return (screenWidth - padding) / 16;
-    }, []);
+        const size = Math.max(1, grid.length || 16);
+        return (screenWidth - padding) / size;
+    }, [grid.length]);
 
     return (
         <View style={styles.container}>

@@ -12,6 +12,22 @@
         "buildType": "apk"
       }
     },
+    "preview-standard": {
+      "env": {
+        "EXPO_PUBLIC_DEBUG_UNDO": "false"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview-debug-undo": {
+      "env": {
+        "EXPO_PUBLIC_DEBUG_UNDO": "true"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
     "production": {
       "android": {
         "buildType": "app-bundle"
