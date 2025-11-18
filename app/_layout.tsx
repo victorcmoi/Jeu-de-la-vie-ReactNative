@@ -11,15 +11,8 @@ export default function TabLayout() {
             <Tabs.Screen
                 name="index"
                 options={{
-                    title: 'Game of Life',
+                    title: 'Jeu de la vie',
                     tabBarLabel: 'Game',
-                }}
-            />
-            <Tabs.Screen
-                name="saved"
-                options={{
-                    title: 'Saved Grids',
-                    tabBarLabel: 'Saved',
                 }}
             />
         </Tabs>
